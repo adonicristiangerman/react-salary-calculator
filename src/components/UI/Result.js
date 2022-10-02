@@ -10,7 +10,7 @@ function Result(props) {
         </div>
         <div className={classes["sub-head"]}>
           <div>
-            <label>Amount to be paid</label>
+            <label className={classes.tobepaid}>Amount to be paid</label>
             <p>{props.amountsObj.finalEarnings}</p>
           </div>
           <div>
