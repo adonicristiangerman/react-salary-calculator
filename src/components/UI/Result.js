@@ -14,11 +14,11 @@ function Result(props) {
             <p>{props.amountsObj.finalEarnings}</p>
           </div>
           <div>
-            <label>Total deductions</label>
-            <p>{props.amountsObj.totalDeduction}</p>
+            <label className={classes.deductions}>Total deductions</label>
+            <p>- {props.amountsObj.totalDeduction}</p>
           </div>
         </div>
-        <div>
+        <div className={classes.description}>
           <div>
             <label>Total earned</label>
             <p>{props.amountsObj.totalAmount}</p>

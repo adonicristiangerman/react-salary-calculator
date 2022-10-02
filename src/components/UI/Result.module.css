@@ -1,3 +1,7 @@
+* {
+  font-family: "Courier New", Courier, monospace;
+}
+
 .results-main {
   padding: 1rem;
   margin: 2rem auto;
@@ -23,7 +27,7 @@
 }
 
 .sub-head p {
-  font-size: 20px;
+  font-size: 1.3rem;
 }
 
 .sub-head label {
@@ -31,8 +35,26 @@
 }
 
 .description {
+  display: flex;
+  justify-content: center;
+  align-self: auto;
+  gap: 3rem;
+}
+
+.description label {
+  font-size: 1.3rem;
+}
+
+.description p {
+  font-size: 1.2rem;
 }
 
 .tobepaid {
   color: rgb(0, 143, 0);
+  font-weight: bold;
+}
+
+.deductions {
+  color: red;
+  font-weight: bold;
 }
