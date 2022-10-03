@@ -36,7 +36,13 @@ function App() {
       isr = (excedent - (sfs + afp)) * 0.25 + 6648;
       totalDeduction = sfs + afp + isr;
       finalEarnings = totalAmount - totalDeduction;
+    } else {
+      sfs = (sal + bon) * 0.0304;
+      afp = (sal + bon) * 0.0287;
+      totalDeduction = sfs + afp;
+      finalEarnings = totalAmount - totalDeduction;
     }
+
     setAmounts({
       totalAmount: totalAmount.toLocaleString(undefined, {
         style: "currency",
